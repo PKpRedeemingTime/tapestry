@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+	This is a website that explores all the different aspects and features of the Tapestry quickstart app.
+	https://tapestry.apache.org/exploring-the-project.html
+	Procedure to create a new project off this one:
+	-Copy and paste from tapestryQuickstart
+	-Change package names to reflect new project name
+	-Update the following in pom.xml (artifactId, name)
+	-Update the following in web.xml (display-name, param-value x 3)
+	-Update the following in log4j.properties (line 13, line 27, line 32, line 39, line 44)
+	-Update the following in logback.xml (logger name)
+	-Maven -> Update Project
+	-Run As -> Maven Build... -> clean install
+	-Run As -> Maven Build... -> jetty:run, with the following JREVM Arguments
+		-XX:MaxPermSize=256M
+		-Xmx600m
+		-Dtapestry.execution-mode=development
+ -->
+<!DOCTYPE web-app
+        PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+        "http://java.sun.com/dtd/web-app_2_3.dtd">
+<web-app>
+    <display-name>tapestryQuickstart Tapestry 5 Application</display-name>
+    <context-param>
+        <!-- The only significant configuration for Tapestry 5, this informs Tapestry
+of where to look for pages, components and mixins. -->
+        <param-name>tapestry.app-package</param-name>
+        <param-value>com.patrickKilpatrick.tapestryQuickstart</param-value>
+    </context-param>
+    <!--
+    Specify some additional Modules for two different execution
+    modes: development and qa.
+    Remember that the default execution mode is production
+    -->
+    <context-param>
+        <param-name>tapestry.development-modules</param-name>
+        <param-value>
+            com.patrickKilpatrick.tapestryQuickstart.services.DevelopmentModule
+        </param-value>
+    </context-param>
+    <context-param>
+        <param-name>tapestry.qa-modules</param-name>
+        <param-value>
+            com.patrickKilpatrick.tapestryQuickstart.services.QaModule
+        </param-value>
+    </context-param>
+    <filter>
+        <filter-name>app</filter-name>
+        <filter-class>org.apache.tapestry5.TapestryFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>app</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+</web-app>

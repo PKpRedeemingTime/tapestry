@@ -1,0 +1,12 @@
+<html t:type="layout" title="addressBook Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <h1>Address Book</h1>
+    <ul>
+    	<li><t:pagelink page="address/create">Create new address</t:pagelink></li>
+    </ul>
+    <t:grid source="addresses"
+       include="honorific,firstName,lastName,street1,city,state,zip,phone"/>
+
+</html>
