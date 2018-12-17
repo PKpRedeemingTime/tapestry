@@ -1,0 +1,13 @@
+<html t:type="layout" title="addressBook Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <h1>${newLicensee.fullName}</h1>
+    
+    <div>
+        <p>License Number: ${personLicense.Number}</p>
+        <p>State: ${personLicense.State}</p>
+        <p>Expiration Date: ${licenseExpirationDate}</p>
+    </div>
+
+</html>

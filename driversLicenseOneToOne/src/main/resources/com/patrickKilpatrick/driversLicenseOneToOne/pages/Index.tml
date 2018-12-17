@@ -1,0 +1,12 @@
+<html t:type="layout" title="addressBook Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <h1>New Person</h1>
+    
+    <t:beaneditform submitlabel="message:submit-label" object="person"
+    	reorder="firstName,lastName"
+    	exclude="createdAt"
+    />
+
+</html>

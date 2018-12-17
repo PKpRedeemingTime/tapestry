@@ -1,10 +1,14 @@
 package com.patrickKilpatrick.addressBook.entities;
 
+import java.util.Arrays;
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import org.apache.tapestry5.annotations.Property;
 import org.apache.tapestry5.beaneditor.NonVisual;
 import org.apache.tapestry5.beaneditor.Validate;
 
@@ -34,4 +38,6 @@ public class Address {
     public String email;
     @Validate("regexp")
     public String phone;
+    
+ 
 }

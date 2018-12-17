@@ -1,12 +1,13 @@
--Copy and paste from tapestryQuickstart
+-Copy and paste from tapestryQuickstart or addressBook (w/persistence)
 -Change package names to reflect new project name
--Update the following in pom.xml (artifactId, name)
+-Change src/main/resources/com/patrickKilpatrick/<projectName>
+-Update the following in pom.xml (artifactId, name, final-name)
 -Update the following in web.xml (display-name, param-value x 3)
 -Update the following in log4j.properties (line 13, line 27, line 32, line 39, line 44)
 -Update the following in logback.xml (logger name)
 -Maven -> Update Project
 -Run As -> Maven Build... -> clean install
--Run As -> Maven Build... -> jetty:run, with the following JREVM Arguments
+-Run As -> Maven Build... -> jetty:run, with the following JRE VM Arguments
 	-XX:MaxPermSize=256M
 	-Xmx600m
 	-Dtapestry.execution-mode=development

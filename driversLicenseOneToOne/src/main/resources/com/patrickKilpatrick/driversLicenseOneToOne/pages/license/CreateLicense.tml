@@ -1,0 +1,15 @@
+<html t:type="layout" title="addressBook Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <h1>New License</h1>
+	<t:form t:id="form">
+		<strong>Driver</strong>
+		<t:select t:id="newLicense" model="personsModel" value="newPerson" />
+	    <t:beaneditor submitlabel="message:submit-label" object="license"
+	    	exclude="createdAt, number"
+	    	reorder="state,expirationDate">
+		</t:beaneditor>
+		<t:submit value="message:submit-label"/>
+	</t:form>
+</html>
