@@ -1,0 +1,17 @@
+<html t:type="layout" title="Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <h1>New Ninja</h1>
+	
+	<t:form t:id="form">
+		<strong>Dojo</strong>
+		<t:select t:id="newNinja" model="dojosModel" value="dojo" />
+		<t:beaneditor object="ninja"
+			exclude="createdAt"
+			reorder="firstName, lastName, age">
+		</t:beaneditor>
+		<t:submit value="message:submit-label"/>
+	</t:form>
+	
+</html>

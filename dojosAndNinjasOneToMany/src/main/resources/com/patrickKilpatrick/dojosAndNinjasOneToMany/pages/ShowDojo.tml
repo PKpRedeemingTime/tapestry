@@ -1,0 +1,10 @@
+<html t:type="layout" title="Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <h1>${dojo.name} Location Ninjas</h1>
+    
+    <t:grid source="ninjas"
+    	include="firstName, lastName, age"/>
+	
+</html>

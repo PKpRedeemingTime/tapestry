@@ -8,6 +8,5 @@
 -Maven -> Update Project
 -Run As -> Maven Build... -> clean install
 -Run As -> Maven Build... -> jetty:run, with the following JRE VM Arguments
-	-XX:MaxPermSize=256M
 	-Xmx600m
 	-Dtapestry.execution-mode=development

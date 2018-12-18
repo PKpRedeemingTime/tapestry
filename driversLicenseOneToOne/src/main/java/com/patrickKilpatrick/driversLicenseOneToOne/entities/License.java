@@ -16,7 +16,7 @@ import javax.persistence.PrePersist;
 import org.apache.tapestry5.beaneditor.NonVisual;
 import org.apache.tapestry5.beaneditor.Validate;
 
-import com.patrickKilpatrick.driversLicenseOneToOne.data.license.State;
+import com.patrickKilpatrick.driversLicenseOneToOne.data.State;
 import com.patrickKilpatrick.driversLicenseOneToOne.entities.Person;
 
 

@@ -1,0 +1,191 @@
+EXCEPTION STACK:
+
+
+        Exception: org.apache.tapestry5.runtime.ComponentEventException
+          Message: Unable to resolve 'ShowDojo/' to a known page name.
+          context: org.apache.tapestry5.internal.EmptyEventContext@77c7d483
+        eventType: action
+         location: classpath:com/patrickKilpatrick/dojosAndNinjasOneToMany/pages/CreateNinja.tml, line 7
+
+        Exception: org.apache.tapestry5.ioc.internal.OperationException
+          Message: Unable to resolve 'ShowDojo/' to a known page name.
+         location: classpath:com/patrickKilpatrick/dojosAndNinjasOneToMany/pages/CreateNinja.tml, line 7
+            trace: Handling traditional 'action' component event request for CreateNinja:form.
+                   Triggering event 'action' on CreateNinja:form
+                   Triggering event 'success' on CreateNinja:form
+
+        Exception: org.apache.tapestry5.runtime.ComponentEventException
+          Message: Unable to resolve 'ShowDojo/' to a known page name.
+          context: org.apache.tapestry5.internal.EmptyEventContext@77c7d483
+        eventType: success
+         location: classpath:com/patrickKilpatrick/dojosAndNinjasOneToMany/pages/CreateNinja.tml, line 7
+
+        Exception: org.apache.tapestry5.ioc.util.UnknownValueException
+          Message: Unable to resolve 'ShowDojo/' to a known page name.
+  availableValues: AvailableValues[Page names: (blank), ComponentLibraries, CreateNinja, Error404, ExceptionReport, HibernateStatistics, Index, Login, PageCatalog, PropertyDisplayBlocks, PropertyEditBlocks, ServiceStatus, ShowDojo, T5Dashboard]
+
+  Stack trace:
+
+  - org.apache.tapestry5.internal.services.ComponentClassResolverImpl.canonicalizePageName(ComponentClassResolverImpl.java:686)
+  - $ComponentClassResolver_c7c08038471d.canonicalizePageName(Unknown Source)
+  - org.apache.tapestry5.internal.services.LinkSourceImpl.createPageRenderLink(LinkSourceImpl.java:108)
+  - $LinkSource_c7c08038479a.createPageRenderLink(Unknown Source)
+  - org.apache.tapestry5.internal.services.PageRenderLinkSourceImpl.createPageRenderLinkWithContext(PageRenderLinkSourceImpl.java:61)
+  - $PageRenderLinkSource_c7c08038476e.createPageRenderLinkWithContext(Unknown Source)
+  - com.patrickKilpatrick.dojosAndNinjasOneToMany.pages.CreateNinja.advised$onSuccess_c7c080384771(CreateNinja.java:43)
+  - com.patrickKilpatrick.dojosAndNinjasOneToMany.pages.CreateNinja$Invocation_onSuccess_c7c080384770.proceedToAdvisedMethod(Unknown Source)
+  - org.apache.tapestry5.internal.plastic.AbstractMethodInvocation.proceed(AbstractMethodInvocation.java:90)
+  - org.apache.tapestry5.internal.hibernate.CommitAfterWorker$1.advise(CommitAfterWorker.java:54)
+  - org.apache.tapestry5.internal.plastic.AbstractMethodInvocation.proceed(AbstractMethodInvocation.java:92)
+  - com.patrickKilpatrick.dojosAndNinjasOneToMany.pages.CreateNinja.onSuccess(CreateNinja.java)
+  - com.patrickKilpatrick.dojosAndNinjasOneToMany.pages.CreateNinja.dispatchComponentEvent(CreateNinja.java)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.dispatchEvent(ComponentPageElementImpl.java:917)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.processEventTriggering(ComponentPageElementImpl.java:1102)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.access$3100(ComponentPageElementImpl.java:57)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl$5.invoke(ComponentPageElementImpl.java:1047)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl$5.invoke(ComponentPageElementImpl.java:1044)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.invoke(OperationTrackerImpl.java:82)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.invoke(PerThreadOperationTracker.java:72)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.invoke(RegistryImpl.java:1260)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementResourcesImpl.invoke(ComponentPageElementResourcesImpl.java:154)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.triggerContextEvent(ComponentPageElementImpl.java:1043)
+  - org.apache.tapestry5.internal.structure.InternalComponentResourcesImpl.triggerContextEvent(InternalComponentResourcesImpl.java:288)
+  - org.apache.tapestry5.corelib.components.Form.onAction(Form.java:549)
+  - org.apache.tapestry5.corelib.components.Form.dispatchComponentEvent(Form.java)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.dispatchEvent(ComponentPageElementImpl.java:917)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.processEventTriggering(ComponentPageElementImpl.java:1102)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.access$3100(ComponentPageElementImpl.java:57)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl$5.invoke(ComponentPageElementImpl.java:1047)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl$5.invoke(ComponentPageElementImpl.java:1044)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.invoke(OperationTrackerImpl.java:82)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.invoke(PerThreadOperationTracker.java:72)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.invoke(RegistryImpl.java:1260)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementResourcesImpl.invoke(ComponentPageElementResourcesImpl.java:154)
+  - org.apache.tapestry5.internal.structure.ComponentPageElementImpl.triggerContextEvent(ComponentPageElementImpl.java:1043)
+  - org.apache.tapestry5.internal.services.ComponentEventRequestHandlerImpl.handle(ComponentEventRequestHandlerImpl.java:73)
+  - org.apache.tapestry5.internal.services.AjaxFilter.handle(AjaxFilter.java:42)
+  - $ComponentEventRequestHandler_c7c08038483c.handle(Unknown Source)
+  - org.apache.tapestry5.upload.internal.services.UploadExceptionFilter.handle(UploadExceptionFilter.java:76)
+  - $ComponentEventRequestHandler_c7c08038483c.handle(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$37.handle(TapestryModule.java:2216)
+  - $ComponentEventRequestHandler_c7c08038483c.handle(Unknown Source)
+  - $ComponentEventRequestHandler_c7c080384774.handle(Unknown Source)
+  - org.apache.tapestry5.internal.services.ComponentRequestHandlerTerminator.handleComponentEvent(ComponentRequestHandlerTerminator.java:43)
+  - org.apache.tapestry5.internal.services.DeferredResponseRenderer.handleComponentEvent(DeferredResponseRenderer.java:45)
+  - $ComponentRequestHandler_c7c080384776.handleComponentEvent(Unknown Source)
+  - org.apache.tapestry5.services.InitializeActivePageName.handleComponentEvent(InitializeActivePageName.java:39)
+  - $ComponentRequestHandler_c7c080384776.handleComponentEvent(Unknown Source)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker$1.perform(RequestOperationTracker.java:55)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker$1.perform(RequestOperationTracker.java:52)
+  - org.apache.tapestry5.ioc.internal.OperationTrackerImpl.perform(OperationTrackerImpl.java:110)
+  - org.apache.tapestry5.ioc.internal.PerThreadOperationTracker.perform(PerThreadOperationTracker.java:84)
+  - org.apache.tapestry5.ioc.internal.RegistryImpl.perform(RegistryImpl.java:1266)
+  - org.apache.tapestry5.internal.services.RequestOperationTracker.handleComponentEvent(RequestOperationTracker.java:47)
+  - $ComponentRequestHandler_c7c080384776.handleComponentEvent(Unknown Source)
+  - $ComponentRequestHandler_c7c080384743.handleComponentEvent(Unknown Source)
+  - org.apache.tapestry5.internal.services.ComponentEventDispatcher.dispatch(ComponentEventDispatcher.java:48)
+  - $Dispatcher_c7c080384745.dispatch(Unknown Source)
+  - $Dispatcher_c7c08038473a.dispatch(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$RequestHandlerTerminator.service(TapestryModule.java:305)
+  - org.apache.tapestry5.internal.services.RequestErrorFilter.service(RequestErrorFilter.java:26)
+  - $RequestHandler_c7c08038473b.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$3.service(TapestryModule.java:846)
+  - $RequestHandler_c7c08038473b.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$2.service(TapestryModule.java:836)
+  - $RequestHandler_c7c08038473b.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.StaticFilesFilter.service(StaticFilesFilter.java:89)
+  - $RequestHandler_c7c08038473b.service(Unknown Source)
+  - com.patrickKilpatrick.dojosAndNinjasOneToMany.services.AppModule$1.service(AppModule.java:114)
+  - $RequestFilter_c7c080384735.service(Unknown Source)
+  - $RequestHandler_c7c08038473b.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.CheckForUpdatesFilter$2.invoke(CheckForUpdatesFilter.java:105)
+  - org.apache.tapestry5.internal.services.CheckForUpdatesFilter$2.invoke(CheckForUpdatesFilter.java:95)
+  - org.apache.tapestry5.ioc.internal.util.ConcurrentBarrier.withRead(ConcurrentBarrier.java:83)
+  - org.apache.tapestry5.internal.services.CheckForUpdatesFilter.service(CheckForUpdatesFilter.java:119)
+  - $RequestHandler_c7c08038473b.service(Unknown Source)
+  - $RequestHandler_c7c08038472f.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$HttpServletRequestHandlerTerminator.service(TapestryModule.java:256)
+  - org.apache.tapestry5.upload.internal.services.MultipartServletRequestFilter.service(MultipartServletRequestFilter.java:45)
+  - $HttpServletRequestHandler_c7c080384731.service(Unknown Source)
+  - org.apache.tapestry5.internal.gzip.GZipFilter.service(GZipFilter.java:59)
+  - $HttpServletRequestHandler_c7c080384731.service(Unknown Source)
+  - org.apache.tapestry5.internal.services.IgnoredPathsFilter.service(IgnoredPathsFilter.java:62)
+  - $HttpServletRequestFilter_c7c08038472b.service(Unknown Source)
+  - $HttpServletRequestHandler_c7c080384731.service(Unknown Source)
+  - org.apache.tapestry5.modules.TapestryModule$1.service(TapestryModule.java:796)
+  - $HttpServletRequestHandler_c7c080384731.service(Unknown Source)
+  - $HttpServletRequestHandler_c7c08038472a.service(Unknown Source)
+  - org.apache.tapestry5.TapestryFilter.doFilter(TapestryFilter.java:166)
+  - org.mortbay.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1148)
+  - org.mortbay.jetty.servlet.ServletHandler.handle(ServletHandler.java:387)
+  - org.mortbay.jetty.security.SecurityHandler.handle(SecurityHandler.java:216)
+  - org.mortbay.jetty.servlet.SessionHandler.handle(SessionHandler.java:181)
+  - org.mortbay.jetty.handler.ContextHandler.handle(ContextHandler.java:765)
+  - org.mortbay.jetty.webapp.WebAppContext.handle(WebAppContext.java:417)
+  - org.mortbay.jetty.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:230)
+  - org.mortbay.jetty.handler.HandlerCollection.handle(HandlerCollection.java:114)
+  - org.mortbay.jetty.handler.HandlerWrapper.handle(HandlerWrapper.java:152)
+  - org.mortbay.jetty.Server.handle(Server.java:324)
+  - org.mortbay.jetty.HttpConnection.handleRequest(HttpConnection.java:535)
+  - org.mortbay.jetty.HttpConnection$RequestHandler.content(HttpConnection.java:880)
+  - org.mortbay.jetty.HttpParser.parseNext(HttpParser.java:747)
+  - org.mortbay.jetty.HttpParser.parseAvailable(HttpParser.java:218)
+  - org.mortbay.jetty.HttpConnection.handle(HttpConnection.java:404)
+  - org.mortbay.io.nio.SelectChannelEndPoint.run(SelectChannelEndPoint.java:409)
+  - org.mortbay.thread.QueuedThreadPool$PoolThread.run(QueuedThreadPool.java:520)
+
+REQUEST:
+
+Basic Information:
+
+                contextPath: /dojosAndNinjasOneToMany
+                     method: POST
+                       path: /createninja.form
+                     locale: en_US
+                 serverName: localhost
+                 remoteHost: 0:0:0:0:0:0:0:1
+
+Headers:
+
+                     Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8
+            Accept-Encoding: gzip, deflate, br
+            Accept-Language: en-US,en;q=0.9
+              Cache-Control: max-age=0
+                 Connection: keep-alive
+             Content-Length: 957
+               Content-Type: application/x-www-form-urlencoded
+                       Host: localhost:8080
+                     Origin: http://localhost:8080
+                    Referer: http://localhost:8080/dojosAndNinjasOneToMany/createninja
+  Upgrade-Insecure-Requests: 1
+                 User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.110 Safari/537.36
+
+Parameters:
+                        age: 45
+                  firstName: Patrick
+                   lastName: Kilpatrick
+                   newNinja: 1
+                   submit_0: Create
+                 t:formdata: +3dxP0M9jwWtq0n4UwSHbRVPYe0=:H4sIAAAAAAAAALWVv25TMRTGTy+qFBQGiPpHERICkaIycINIu4QB2ij0j0JUKQImVPnenAQXX9u1nSYdYOoAj8DCCxSYgBEhdUAsvALiAVgKYoEB+6ZAqtIoN1I26+p852d//u7xi68w3p6GiZJCYrBK+QYpcmxztwCtYF6opk8kCR+gb4hEbdT2vB8KhYwGfkA0+guB/UhCc4siq+dqaFpy5s5e+svkh18ejFUgHQpulGBVEqGBTGWDbJE8I7yZrxlFefN6RxpIWWhM77eZhaSbWVMiRK1rrSCiWlPB917V5xo/nn/yADqynYWpXlSAhGOdGqEcrNgXFopICo7caH/RysqxzPJQEoX3TlfTu5232S7lHJz9P8VnQkiH8gdFVawgd21fNi4vTe3eGE37wvvZneXC95fQbT8LM8e0l0pIVGb7n2VLg4LWDqQHtsWZKfMtqgSPbMHqGW/zcyF/JY5P6g9nEx7DmMvKyQZV2rg4tXNwwbXP9zZcZCJ8qIsGO6bhUgDaKSG5zsnGExmwMqQBJWa7HrIguvvu0fnl6Z+jueO5RBFyPqQT+ODqT9lfmpFhbimhLOElufLMIAeeGJErJ0gT25fg4nEn460oQHXYkiSa0fnRd1qWh5iWR1O/fnv16cf73550YzkJmV6gdlPcONjNQWHx4DdHn4Fntf3sm9c7JQ88O2BCRm31Sj0eMPa9QoZuMy6Df2dOqktfv9qz/A069WqWPAcAAA==
+                   t:submit: ["submit_0","submit_0"]
+
+SYSTEM INFORMATION:
+
+Memory:
+      258,388,208 bytes free
+      323,485,696 bytes total
+      559,415,296 bytes max
+
+12 Threads:
+                                                           Reference Handler WAITING, daemon, priority 10
+                                                                   Finalizer WAITING, daemon, priority 8
+                                                           Signal Dispatcher RUNNABLE, daemon, priority 9
+                                                             Attach Listener RUNNABLE, daemon
+                                                                        main WAITING
+  2090894907@qtp-584157293-1 - Acceptor0 SelectChannelConnector@0.0.0.0:8080 RUNNABLE
+                                                                     Timer-0 TIMED_WAITING, daemon
+*                                                   48251225@qtp-584157293-2 RUNNABLE
+                                         Abandoned connection cleanup thread TIMED_WAITING, daemon
+                                                             pool-1-thread-1 TIMED_WAITING
+                                                   190374310@qtp-584157293-3 TIMED_WAITING
+                                                  1291066709@qtp-584157293-4 TIMED_WAITING
