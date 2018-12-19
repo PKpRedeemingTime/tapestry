@@ -1,0 +1,19 @@
+<html t:type="layout" title="Home"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+	<h1>Questions Dashboard</h1>
+    <t:grid source="questions" row="question" add="tag" exclude="createdAt">
+    	<p:questioncell>
+    		<t:pagelink page="showquestion" context="question.id">${question.question}</t:pagelink>
+    	</p:questioncell>
+    	<p:tagcell>
+    		<t:loop source="question.getTags()" value="tag">
+    			<p>${tag.tag}</p>
+    		</t:loop>
+    	</p:tagcell>
+    </t:grid>
+    <br/>
+    <t:pagelink page="newquestion">New Question</t:pagelink>
+	
+</html>

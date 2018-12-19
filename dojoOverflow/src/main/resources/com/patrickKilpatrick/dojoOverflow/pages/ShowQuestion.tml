@@ -1,0 +1,15 @@
+<html t:type="layout" title="Home"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+	<h1>${question.question}</h1>
+	<h3>Tags: 
+		<t:loop source="question.getTags()" value="tag">
+			${tag.tag}, 
+		</t:loop>
+	</h3>
+	<t:grid source="answers" exclude="createdAt"/>
+	<h3>Add your answer...</h3>
+    <t:beaneditform submitlabel="message:submit-label" object="answer" exclude="createdAt"/>
+	
+</html>
