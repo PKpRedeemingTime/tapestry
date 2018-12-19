@@ -1,0 +1,10 @@
+<html t:type="layout" title="Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <h1>New Category</h1>
+    
+    <t:beaneditform submitlabel="message:submit-label" object="category"
+    	exclude="createdAt" />
+	
+</html>

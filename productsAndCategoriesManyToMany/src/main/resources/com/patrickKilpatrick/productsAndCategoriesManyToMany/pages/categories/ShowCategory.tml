@@ -1,0 +1,17 @@
+<html t:type="layout" title="Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <h1>${category.name}</h1>
+    
+    <h3>Products:</h3>
+    <t:grid source="categoryProducts"
+		include="name" />
+	
+	<t:form t:id="form">
+		<strong>Available Products</strong>
+		<t:select t:id="newRelationship" model="productsModel" value="newProduct"/>
+		<t:submit value="message:submit-label"/>
+	</t:form>
+	
+</html>

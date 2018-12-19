@@ -1,0 +1,12 @@
+<html t:type="layout" title="Index"
+      xmlns:t="http://tapestry.apache.org/schema/tapestry_5_4.xsd"
+      xmlns:p="tapestry:parameter">
+
+    <h1>Welcome to Products &amp; Categories!</h1>
+    
+    <h3>To Create a Product...</h3>
+    <p><t:pagelink page="products/createproduct" class="btn btn-primary btn-large">Click Here!</t:pagelink></p>
+    <h3>To Create a Category...</h3>
+    <p><t:pagelink page="categories/createcategory" class="btn btn-primary btn-large">Click Here!</t:pagelink></p>
+	
+</html>
